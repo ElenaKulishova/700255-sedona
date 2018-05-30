@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Елена Кулишова](https://up.htmlacademy.ru/htmlcss/21/user/700255).
-* Наставник: `Ксения Торкова`.
+* Студент: Елена Кулишова(https://up.htmlacademy.ru/htmlcss/21/user/700255).
+* Наставник: Ксения Торкова(https://htmlacademy.ru/profile/id23249).
 
 ---
 
