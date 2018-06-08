@@ -9,7 +9,7 @@
 <body>
   <header class="main-header">
     <a class="main-logo">
-        <img src="img/realcity.jpg" width="800" height="256" alt="Гостиница">
+        <img src="img/logotype.png" width="138" height="70" alt="Логотип">
       </a>
     <nav class="main-navigation">
       <ul class="main-menu">
@@ -21,39 +21,51 @@
     </nav>
   </header>
   <main>
-    <section class="choosing">
-      <!-- Форма начинается-->
-      <h3>Инфраструктура:</h3>
-      <ul>
-        <li>
-          <h3>Бассейн</h3>
-          <!-- или это все нужно span размечать?-->
-        </li>
-        <li>
-          <h3>Парковка</h3>
-        </li>
-        <li>
-          <h3>WI-FI</h3>
-        </li>
-      </ul>
-      <h3>Тип жилья:</h3>
-      <ul>
-        <li>
-          <h3>Гостиница</h3>
-        </li>
-        <li>
-          <h3>Мотель</h3>
-        </li>
-        <li>
-          <h3>Апартаменты</h3>
-        </li>
-      </ul>
-      <h3>Стоимость в сутки(Р):</h3>
-      <!-- Здесь будет форма,ползунок ?-->
-      <a class="button-select" href="#">Показать</a>
-      <!-- Форма заканчивается-->
+    <section class="search">
+      <img src="img/mountains.jpg" width="1200" height="562" alt="Фон" />
+      <form class="search-hotels" action="#" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="swimming" id="swimmingpool" checked />
+              <label for="swimmingpool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parkingcar" id="parking" />
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-firouter" id="wi-fi" />
+              <label for="wi-fi">WI-FI</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotels" id="guesthouse" checked />
+              <label for="guesthouse">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="choosemotels" id="motel" checked/>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="apartments" checked/>
+              <label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <label for="range">Стоимость в сутки(Р):</label>
+        <input type="text" name="count" id="from" value="от 0" />
+        <input type="text" name="count" id="to" value="до 3000" />
+        <input type="range" id="range" min="0" max="3000" step="10" value="0">
+        <input type="submit" value="Показать" />
+      </form>
       <h3>Найдено:</h3>
-      <!-- Здесь должна быть формула вывода результата?-->
+      <!--  вывод результата?-->
       <h4>Сортировка</h4>
       <ul>
         <li>
@@ -67,14 +79,14 @@
         </li>
       </ul>
     </section>
-    <section class="choosingresult">
+    <section class="search-result">
       <ul class="hotels">
         <li>
           <h3>
             <a class="Amara" href="#">
               <span>Amara resort&Spa</span>
             </a>
-            <span>Госиница от 4000 р.</span>
+            <span>Гостиница от 4000 р.</span>
           </h3>
           <a class="button" href="#">Подробнее</a>
           <a class="button" href="#">Забронировать</a>
@@ -108,7 +120,7 @@
           <a class="button" href="#">Забронировать</a>
           <span>Рейтинг: 9,2</span>
           <a class="photovillas" href="#">
-            <img src="img/villas at poco.jpg" width="135" height="90" alt="Фото Виллас">
+            <img src="img/villasatpoco.jpg" width="135" height="90" alt="Фото Виллас">
           </a>
         </li>
       </ul>
