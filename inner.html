@@ -8,7 +8,7 @@
 
 <body>
   <header class="main-header">
-    <a class="main-logo">
+    <a class="main-logo" href="#">
         <img src="img/logotype.png" width="138" height="70" alt="Логотип">
       </a>
     <nav class="main-navigation">
@@ -20,10 +20,10 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="search">
-      <img src="img/mountains.jpg" width="1200" height="562" alt="Фон" />
-      <form class="formsearching" action="https://echo.htmlacademy.ru" method="post">
+      <form class="formsearching" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -63,6 +63,7 @@
           <input type="text" name="count" id="from" value="" placeholder="от 0" />
           <input type="text" name="count" id="to" value="" placeholder="до 3000" />
           <input type="range" id="range" min="0" max="3000" step="10" value="">
+          <!--Здесь потом будет див я так поняла вместо input="range"-->
         </p>
         <p class="button-scan">
           <input type="submit" value="Показать" />
@@ -71,18 +72,23 @@
       <h3>Найдено:</h3>
       <output> 3 </output>
       <h4>Сортировка</h4>
-      <ul>
+      <ul class="sorting">
         <li>
-          <span>По цене</span>
+          <a href="#">По цене</a>
         </li>
         <li>
-          <span>По типу</span>
+          <a href="#">По типу</a>
         </li>
         <li>
-          <span>По рейтингу</span>
+          <a href="#">По рейтингу</a>
         </li>
       </ul>
+      <span class="visually-hidden">по возрастанию</span>
+      <a class="sortingbutton" href="#">по возрастанию</a>
+      <span class="visually-hidden">по убыванию</span>
+      <a class="sortingbutton" href="#">по убыванию</a>
     </section>
+    <!-- Как сделать кнопки сортировки см.Рамки и фоны часть 2-->
     <section class="total">
       <ul class="hotels">
         <li>
@@ -92,12 +98,8 @@
             </a>
             <span>Гостиница от 4000 р.</span>
           </h3>
-          <a class="button" href="#">
-            <button>Подробнее</button>
-          </a>
-          <a class="button" href="#">
-            <button>Забронировать</button>
-          </a>
+          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="#">Забронировать</a>
           <span>Рейтинг: 8,5</span>
           <a class="photoamara" href="#">
             <img src="img/amara.jpg" width="135" height="90" alt="Фото Амары">
@@ -110,12 +112,8 @@
             </a>
             <span>Мотель от 3000 р.</span>
           </h3>
-          <a class="button" href="#">
-            <button>Подробнее</button>
-          </a>
-          <a class="button" href="#">
-            <button>Забронировать</button>
-          </a>
+          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="#">Забронировать</a>
           <span>Рейтинг: 8,9</span>
           <a class="photodesert" href="#">
             <img src="img/desert.jpg" width="135" height="90" alt="Фото Десерт">
@@ -128,12 +126,8 @@
             </a>
             <span>Апартаменты от 2000 р.</span>
           </h3>
-          <a class="button" href="#">
-            <button>Подробнее</button>
-          </a>
-          <a class="button" href="#">
-            <button>Забронировать</button>
-          </a>
+          <a class="button" href="#">Подробнее</a>
+          <a class="button" href="#">Забронировать</a>
           <span>Рейтинг: 9,2</span>
           <a class="photovillas" href="#">
             <img src="img/villasatpoco.jpg" width="135" height="90" alt="Фото Виллас">
