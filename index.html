@@ -20,11 +20,10 @@
       </ul>
     </nav>
   </header>
+
   <main class="container">
     <section class="container-photos">
-      <img src="img/backgroundmain.jpg" width="1200" height="773" alt="Фон" />
       <img src="img/welcome.png" width="458" height="352" alt="Надпись" />
-      <img src="img/shapewhite.png" width="1200" height="57" alt="Эффект" />
     </section>
     <section class="feature">
       <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -74,31 +73,35 @@
       </ul>
     </section>
     <section class="searchhotels">
-      <h1>Заинтересовались?</h1>
+      <h3>Заинтересовались?</h3>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-      <a class="button-search" href="#">
-        <button class="sedonasearch">Поиск гостиницы в Седоне</button>
-      </a>
-      <!--или тут
-    <h3 class="sedonasearch">Поиск гостиницы в Седоне</h3>??
-  -->
-      <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+      <p class="staticform">
+        <button class="staticbutton" type="button">Поиск гостиницы в Седоне</button>
+      </p>
+      <form class="hotelselection" action="https://echo.htmlacademy.ru" method="post">
         <p class="datearrival">
           <label for="arrival">Дата заезда:</label>
           <input type="text" name="date" id="arrival" value="" placeholder="24 апреля 2017" />
         </p>
+        <p class="visually-hidden">Календарь</p>
+        <button type="button"></button>
         <p class="datedeparture">
           <label for="departure">Дата выезда:</label>
           <input type="text" name="date" id="departure" value="" placeholder="4 июля 2017" />
         </p>
+        <p class="visually-hidden">Календарь</p>
+        <button type="button"></button>
         <p class="adults">
           <label for="adults">Взрослые</label>
-          <input type="" name="adults" id="adults" value="" placeholder="2" />
+          <input type="text" name="adults" id="adults" value="" placeholder="2" />
+          <button type="button"></button>
+          <button type="button"></button>
         </p>
-        <!--как сделать плюсик и минус?-->
         <p class="children">
           <label for="children">Дети</label>
-          <input type="" name="children" value="" placeholder="0" />
+          <input type="text" name="children" id="children" value="" placeholder="0" />
+          <button type="button"></button>
+          <button type="button"></button>
         </p>
         <button class="button" type="submit">Найти</button>
       </form>
