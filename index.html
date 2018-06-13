@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,56 +25,63 @@
   </header>
 
   <main class="container">
+
     <section class="container-photos">
       <img src="img/welcome.png" width="458" height="352" alt="Надпись" />
     </section>
+
     <section class="feature">
-      <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h1>Седона-небольшой городок в Аризоне,<br />
+         заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
-    <section class="aboutcity">
-      <h2>Настоящий городок</h2>
-      <p>№1</p>
-      <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
-      <img src="img/hotels.jpg" width="800" height="256" alt="Гостиница">
-      <ul>
-        <li>
-          <h3>Жилье</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li>
-          <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li>
-          <h3>Сувениры</h3>
-          <p>Не только китайского,но и местного производства!</p>
-        </li>
-      </ul>
-    </section>
-    <section class="attraction">
-      <h2>Там есть мост дьявола</h2>
-      <p>№2</p>
-      <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
-      <img src="img/devilbridge.jpg" width="800" height="256" alt="Мост">
-      <ul>
-        <li>
-          <h3>Небольшая площадь</h3>
-          <p>№3</p>
-          <p>Все достопримечательности находятся очень близко</p>
-        </li>
-        <li>
-          <h3>Красивая дорога</h3>
-          <p>№4</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li>
-          <h3>Мало туристов</h3>
-          <p>№5</p>
-          <p>Большиство едет в Гранд Каньон и толпится там</p>
-        </li>
-      </ul>
-    </section>
+
+    <div class="bigfeature">
+      <section class="aboutcity">
+        <h2>Настоящий городок</h2>
+        <p>№1</p>
+        <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
+        <img src="img/hotels.jpg" width="800" height="256" alt="Гостиница">
+        <ul class="advantages">
+          <li>
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li>
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li>
+            <h3>Сувениры</h3>
+            <p>Не только китайского,но и местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="attraction">
+        <h2>Там есть мост дьявола</h2>
+        <p>№2</p>
+        <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
+        <img src="img/devilbridge.jpg" width="800" height="256" alt="Мост">
+        <ul class="advantages">
+          <li>
+            <h3>Небольшая площадь</h3>
+            <p>№3</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <p>№4</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <p>№5</p>
+            <p>Большиство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
     <section class="searchhotels">
       <h3>Заинтересовались?</h3>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
@@ -123,7 +133,7 @@
   <footer class="main-footer">
     <div>
       <a class="button-hashtag" href="#">Visitsedona</a>
-      <ul>
+      <ul class="advantages">
         <li><a class="button-tw" href="#">Twitter</a></li>
         <li><a class="button-fb" href="#">Facebook</a></li>
         <li><a class="button-ut" href="#">Youtube</a></li>
