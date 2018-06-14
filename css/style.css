@@ -1,108 +1,162 @@
 
-body{
+body {
   margin: 0;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 
+  background-color: #ffffff;
 }
-
-a{
+/*а можно свойство text-align: center прописывать в body?*/
+a {
   text-decoration: none;
+  color: inherit;
 }
 
-.main-navigation{
-  font-size: 14px;
-  font-weight: 700px;
-  color: #000000;
+.main-navigation {
+  line-height: 26px;
+  font-weight: 700;
 
   background-color: #ffffff;
 }
 
-.main-menu a{
+.main-menu,
+.advantages {
   list-style: none;
-  color: #000000;
 }
 
+/*можно как-то упростить эту конструкцию?*/
 .main-menu a:hover,
 .main-menu a:focus,
 .sorting a:hover,
-.sorting a:focus{
+.sorting a:focus,
+.hotelitems:hover,
+.hotelitems:focus {
   color: #81b3d2;
 }
 
-.container-photos{
-  background-image: url("img/backgroundmain.jpg");
+.container-photos {
+  background-image: url("../img/backgroundmain.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #ffffff;
+}
+
+.feature h1 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.feature p {
+  line-height: 26px;
+  color: #767676;
+  text-align: center;
+}
+
+.container1,
+.container2 {
+  background-color: #81b3d2;
+}
+
+.aboutcity h2,
+.attraction h2 {
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+.aboutcity p,
+.attraction p {
+  text-align: center;
+  color: #ffffff;
+}
+
+.container3 {
   background-color: #eeeeee;
 }
 
-.feature h1{
+.advantages h3 {
   font-size: 21px;
-  font-weight: 700px;
+  font-weight: 700;
   text-align: center;
-  vertical-align: middle;
-}
-
-.feature p{
-  text-align: center;
-  vertical-align: middle;
 
 }
 
-.aboutcity h2{
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: 700px;
-  text-align: left;
-  vertical-align: middle;
-  color: #ffffff;
+.advantages p {
+  text-align: center;
+  background-color: #ffffff;
+  color: #767676;
+}
 
+.searchhotels h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.searchhotels p {
+  line-height: 24px;
+  text-align: center;
+}
+
+.staticbutton,
+.buttonsearch {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.buttonreserved,
+.buttondetails {
+  font-weight: 700;
+}
+
+.staticbutton,
+.buttonreserved {
+  color: #ffffff;
+  background-color: #766357;
+  border: none;
+}
+.buttonsearch,
+.buttondetails {
+  color: #ffffff;
   background-color: #81b3d2;
+  border: none;
 }
 
-.aboutcity p{
-  text-align: left;
-  vertical-align: middle;
+.staticbutton:hover,
+.staticbutton:focus,
+.staticbutton:active,
+.buttonresrved:hover,
+.buttonreserved:focus
+.buttonsearch:active {
+  background-color: #604e43;
+}
+.buttonsearch:hover,
+.buttonsearch:focus,
+.buttonsearch:active,
+.buttondetails:hover,
+.buttondetails:focus,
+.buttondetails:active {
+  background-color: #669ec0;
+}
+.hotelselection {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
-.attraction h2{
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: 700px;
-  text-align: right;
-  vertical-align: middle;
-  color: #ffffff;
-
-  background-color: #81b3d2;
-
+.htmlacademy p {
+  font-size: 14px;
+  line-height: 26px;
 }
-
-.attraction p{
-  text-align: right;
-  vertical-align: middle;
-
-}
-
-.advantages h3{
-  font-size: 21px;
-  font-weight: 700px;
-  text-align: left;
-  vertical-align: middle;
-
-}
-
-.advantages p{
-  text-align: center;
-  vertical-align: middle;
-
-  color: #333333;
-}
- .advantages li{
-   list-style: none;
- }
