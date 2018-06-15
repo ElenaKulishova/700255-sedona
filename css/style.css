@@ -11,6 +11,7 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
+
 }
 /*а можно свойство text-align: center прописывать в body?*/
 a {
@@ -33,8 +34,6 @@ a {
 /*можно как-то упростить эту конструкцию?*/
 .main-menu a:hover,
 .main-menu a:focus,
-.sorting a:hover,
-.sorting a:focus,
 .hotelitems:hover,
 .hotelitems:focus {
   color: #81b3d2;
@@ -44,7 +43,7 @@ a {
   background-image: url("../img/backgroundmain.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-color: #ffffff;
+  background-color:#81b3d2;
 }
 
 .feature h1 {
@@ -114,6 +113,7 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .buttonreserved,
@@ -127,6 +127,7 @@ a {
   background-color: #766357;
   border: none;
 }
+
 .buttonsearch,
 .buttondetails {
   color: #ffffff;
@@ -136,27 +137,134 @@ a {
 
 .staticbutton:hover,
 .staticbutton:focus,
-.staticbutton:active,
-.buttonresrved:hover,
-.buttonreserved:focus
-.buttonsearch:active {
+.buttonreserved:hover,/*Не пойму эта кнопка при нажатии окрашивается или нет*/
+.buttonreserved:focus {
   background-color: #604e43;
 }
+
 .buttonsearch:hover,
 .buttonsearch:focus,
-.buttonsearch:active,
 .buttondetails:hover,
-.buttondetails:focus,
-.buttondetails:active {
+.buttondetails:focus {
   background-color: #669ec0;
 }
+
+.buttonsearch:active,
+.buttondetails:active,
+.staticbutton:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .hotelselection {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.htmlacademy p {
+.htmlacademy p,
+.button-hashtag {
   font-size: 14px;
   line-height: 26px;
+}
+
+.searchhotels input[type="text"]{
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.searchhotels input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.searchhotels input[type="text"]:focus{
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.formsearching {
+  background-image: url("../img/mountains.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #51819f;
+
+  color:#ffffff;
+}
+
+.formsearching fieldset{
+  border:none;
+}
+
+.formsearching input[type="checkbox"]{
+  border: 5px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/*Как сделать чек-бокс и кнопку показать как на макете и стайлгайде?*/
+
+.button-scan input[type="submit"]{
+  color: #ffffff;
+  border: 5px solid #ffffff;
+}
+
+.button-scan input[type="submit"]:hover{
+  background-color: #ffffff;
+}
+
+.formsearching legend,
+.price label {
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+}
+
+.formsearching li{
+  list-style: none;
+}
+
+.hotelitems,
+.exit,
+.button-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.container4 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting li,
+.hotels li {
+  list-style: none;
+}
+
+
+.sorting a{
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  border-bottom: 1px dashed #81b3d2;
+
+}
+
+.sorting a:hover,
+.sorting a:focus{
+  color: #81b3d2;
+
+}
+
+.hotelitems:active,
+.main-menu a:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.hotel .hoteldetails {
+  font: inherit;
+}
+
+.rating {
+  color: #666666;
+  background-color: #f2f2f2;
 }
