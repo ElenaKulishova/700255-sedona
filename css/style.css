@@ -11,9 +11,8 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
-
 }
-/*а можно свойство text-align: center прописывать в body?*/
+/*я  прописала text-align:center, но тогда и страница гостиниц вся по центру выровнялась,поэтому удалила*/
 a {
   text-decoration: none;
   color: inherit;
@@ -31,12 +30,15 @@ a {
   list-style: none;
 }
 
-/*можно как-то упростить эту конструкцию?*/
 .main-menu a:hover,
 .main-menu a:focus,
 .hotelitems:hover,
 .hotelitems:focus {
   color: #81b3d2;
+}
+
+.main-menu li .current {
+  color: #766357;
 }
 
 .container-photos {
@@ -86,7 +88,6 @@ a {
   font-size: 21px;
   font-weight: 700;
   text-align: center;
-
 }
 
 .advantages p {
@@ -114,6 +115,7 @@ a {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  outline: none;
 }
 
 .buttonreserved,
@@ -137,7 +139,7 @@ a {
 
 .staticbutton:hover,
 .staticbutton:focus,
-.buttonreserved:hover,/*Не пойму эта кнопка при нажатии окрашивается или нет*/
+.buttonreserved:hover,
 .buttonreserved:focus {
   background-color: #604e43;
 }
@@ -150,9 +152,15 @@ a {
 }
 
 .buttonsearch:active,
-.buttondetails:active,
-.staticbutton:active {
+.buttondetails:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.staticbutton:active,
+.buttonreserved:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 .hotelselection {
@@ -167,7 +175,7 @@ a {
   line-height: 26px;
 }
 
-.searchhotels input[type="text"]{
+.searchhotels input[type="text"] {
   background-color: #f2f2f2;
   border: none;
   outline: none;
@@ -177,7 +185,7 @@ a {
   background-color: #ebebeb;
 }
 
-.searchhotels input[type="text"]:focus{
+.searchhotels input[type="text"]:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -191,22 +199,24 @@ a {
   color:#ffffff;
 }
 
-.formsearching fieldset{
+.formsearching fieldset {
   border:none;
 }
 
-.formsearching input[type="checkbox"]{
+.formsearching input[type="checkbox"] {
   border: 5px solid #ffffff;
   background-color: rgba(255, 255, 255, 0.3);
 }
-/*Как сделать чек-бокс и кнопку показать как на макете и стайлгайде?*/
 
-.button-scan input[type="submit"]{
+.button-scan input[type="submit"] {
+  background-color: transparent;
   color: #ffffff;
-  border: 5px solid #ffffff;
+  border: 2px solid #ffffff;
+  outline: none;
 }
 
-.button-scan input[type="submit"]:hover{
+.button-scan input[type="submit"]:hover {
+  color: #000000;
   background-color: #ffffff;
 }
 
@@ -217,19 +227,30 @@ a {
   border: none;
 }
 
-.formsearching li{
+.price input[type="text"] {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  outline: none;
+}
+
+.formsearching input[type="checkbox"] {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+
+.formsearching li {
   list-style: none;
 }
 
 .hotelitems,
-.exit,
+.exit h3,
 .button-hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.container4 {
+.container4 h4 {
   font-size: 12px;
   line-height: 18px;
 }
@@ -239,8 +260,12 @@ a {
   list-style: none;
 }
 
+.sorting li .currentpice {
+  color: #bad3e5;
+  border-bottom: none;
+}
 
-.sorting a{
+.sorting a {
   font-size: 12px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
@@ -250,18 +275,23 @@ a {
 }
 
 .sorting a:hover,
-.sorting a:focus{
+.sorting a:focus {
   color: #81b3d2;
+}
 
+.sorting a:active {
+  color: #000000;
+  border-bottom: none;
 }
 
 .hotelitems:active,
 .main-menu a:active {
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.hotel .hoteldetails {
+.total .hoteldetails {
   font: inherit;
+  font-weight: 400;
 }
 
 .rating {
