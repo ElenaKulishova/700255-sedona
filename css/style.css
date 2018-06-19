@@ -11,6 +11,11 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
+
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /*Забыла куда прописать серый фон?*/
 }
 /*я  прописала text-align:center, но тогда и страница гостиниц вся по центру выровнялась,поэтому удалила*/
 a {
@@ -26,7 +31,8 @@ a {
 }
 
 .main-menu,
-.advantages {
+.advantages,
+.advantages2 {
   list-style: none;
 }
 
@@ -41,6 +47,11 @@ a {
   color: #766357;
 }
 
+.main-logo img {
+  position: absolute;
+  left: 570px;
+}
+
 .container-photos {
   background-image: url("../img/backgroundmain.jpg");
   background-repeat: no-repeat;
@@ -48,7 +59,13 @@ a {
   background-color:#81b3d2;
 }
 
+.container-photos img {
+
+}
+
 .feature h1 {
+  margin-top: 218px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -56,6 +73,8 @@ a {
 }
 
 .feature p {
+  margin-bottom: 62px;
+
   line-height: 26px;
   color: #767676;
   text-align: center;
@@ -84,13 +103,15 @@ a {
   background-color: #eeeeee;
 }
 
-.advantages h3 {
+.advantages h3,
+.advantages2 h3 {
   font-size: 21px;
   font-weight: 700;
   text-align: center;
 }
 
-.advantages p {
+.advantages p,
+.advantages2 p {
   text-align: center;
   background-color: #ffffff;
   color: #767676;
@@ -297,4 +318,64 @@ a {
 .rating {
   color: #666666;
   background-color: #f2f2f2;
+}
+/*сетки*/
+.main-menu{
+  display: flex;
+  padding-left: 0;
+}
+
+.main-menu li{
+  width: 239px;
+  text-align: center;
+}
+ .main-menu li:nth-child(2){
+   margin-right: 244px;
+ }
+
+ .container1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+.container2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+ .advantages {
+   display: flex;
+   height: 334px;
+ }
+
+ .advantages li{
+   justify-content: center;
+   margin-top: 160px;
+   margin-right: 110px;
+ }
+ .advantages2 {
+   display: flex;
+   height: 255px;
+   justify-content: center;
+   align-items: center;
+ }
+
+.advantages2 li{
+  width: 269px;
+}
+
+.advantages2 li:nth-child(2){
+  margin-right: 150px;
+  margin-left: 150px;
+}
+.advantages2 h3{
+  width: 110px;
+}
+
+.main-footer-container {
+  display: flex;
+  justify-content: center;
 }
