@@ -49,7 +49,7 @@ a {
 
 .main-logo img {
   position: absolute;
-  left: 570px;
+
 }
 
 .container-photos {
@@ -60,11 +60,14 @@ a {
 }
 
 .container-photos img {
-
+  margin-top: 70px;
+  margin-left: 370px;
 }
 
 .feature h1 {
   margin-top: 218px;
+  margin-right: 370px;
+  margin-left: 370px;
 
   font-size: 21px;
   line-height: 26px;
@@ -87,6 +90,9 @@ a {
 
 .aboutcity h2,
 .attraction h2 {
+  margin-left: 115px;
+  margin-right: 115px;
+
   line-height: 21px;
   font-weight: 700;
   text-align: center;
@@ -95,6 +101,9 @@ a {
 
 .aboutcity p,
 .attraction p {
+  margin-left: 50px;
+  margin-right: 55px;
+
   text-align: center;
   color: #ffffff;
 }
