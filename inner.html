@@ -10,155 +10,158 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <a class="main-logo" href="#">
+  <div class="mainpage">
+    <header class="main-header">
+      <a class="main-logo" href="#">
         <img src="img/logotype.png" width="138" height="70" alt="Логотип">
       </a>
-    <nav class="main-navigation">
-      <ul class="main-menu">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a class="current">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="search">
-      <form class="formsearching" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend>Инфраструктура:</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="swimming" id="swimmingpool" checked />
-              <label for="swimmingpool">Бассейн</label>
-            </li>
-            <li>
-              <input type="checkbox" name="parkingcar" id="parking" />
-              <label for="parking">Парковка</label>
-            </li>
-            <li>
-              <input type="checkbox" name="wi-firouter" id="wi-fi" />
-              <label for="wi-fi">WI-FI</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="hotels" id="guesthouse" checked />
-              <label for="guesthouse">Гостиница</label>
-            </li>
-            <li>
-              <input type="checkbox" name="choosemotels" id="motel" checked/>
-              <label for="motel">Мотель</label>
-            </li>
-            <li>
-              <input type="checkbox" name="apartments" id="apartments" checked/>
-              <label for="apartments">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-        <p class="price">
-          <label for="range">Стоимость в сутки(Р):</label>
-          <input type="text" name="count" id="from" value="" placeholder="от 0" />
-          <input type="text" name="count" id="to" value="" placeholder="до 3000" />
-          <input type="range" id="range" min="0" max="3000" step="10" value="">
-          <!--Здесь потом будет див я так поняла вместо input="range"-->
-        </p>
-        <p class="button-scan">
-          <input type="submit" value="Показать" />
-        </p>
-      </form>
-      <div class="exit">
-        <h3>Найдено:</h3>
-        <output> 3 </output>
-      </div>
-      <div class="container4">
-        <h4>Сортировка:</h4>
-        <ul class="sorting">
-          <li>
-            <a class="currentpice">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По рейтингу</a>
-          </li>
+      <nav class="main-navigation">
+        <ul class="main-menu">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a class="current">Гостиницы</a></li>
         </ul>
-      </div>
-      <a class="sortingbutton" href="#">
+      </nav>
+    </header>
+
+    <main>
+      <section class="search">
+        <form class="formsearching" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend class="infrastructure">Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="swimming" id="swimmingpool" checked />
+                <label for="swimmingpool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parkingcar" id="parking" />
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-firouter" id="wi-fi" />
+                <label for="wi-fi">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="typeofhouse">Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotels" id="guesthouse" checked />
+                <label for="guesthouse">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="choosemotels" id="motel" checked/>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="apartments" checked/>
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <p class="price">
+            <label for="range">Стоимость в сутки(Р):</label>
+            <input type="text" name="count" id="from" value="" placeholder="от 0" />
+            <input type="text" name="count" id="to" value="" placeholder="до 3000" />
+            <input type="range" id="range" min="0" max="3000" step="10" value="">
+          </p>
+          <p class="button-scan">
+            <input type="submit" value="Показать" />
+          </p>
+        </form>
+        <div class="test">
+          <div class="exit">
+            <h3>Найдено:</h3>
+            <output> 3 </output>
+          </div>
+          <div class="container4">
+            <h4>Сортировка:</h4>
+            <ul class="sorting">
+              <li>
+                <a class="currentpice">По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По рейтингу</a>
+              </li>
+            </ul>
+          </div>
+          <a class="sortingbutton" href="#">
         <span class="visually-hidden">по возрастанию</span>
       </a>
-      <a class="sortingbutton" href="#">
+          <a class="sortingbutton" href="#">
         <span class="visually-hidden">по убыванию</span>
       </a>
-    </section>
-    <!-- Как сделать кнопки сортировки см.Рамки и фоны часть 2-->
-    <section class="total">
-      <ul class="hotels">
-        <li>
-          <h3>
+        </div>
+      </section>
+      <!-- Как сделать кнопки сортировки см.Рамки и фоны часть 2-->
+      <section class="total">
+        <ul class="hotels">
+          <li>
+            <h3>
             <a class="hotelitems" href="#">
               <span>Amara resort&Spa</span>
             </a>
             <span class="hoteldetails">Гостиница от 4000 р.</span>
           </h3>
-          <a class="buttondetails" href="#">Подробнее</a>
-          <a class="buttonreserved" href="#">Забронировать</a>
-          <span class="rating">Рейтинг: 8,5</span>
-          <a class="photoamara" href="#">
+            <a class="buttondetails" href="#">Подробнее</a>
+            <a class="buttonreserved" href="#">Забронировать</a>
+            <span class="rating">Рейтинг: 8,5</span>
+            <a class="photoamara" href="#">
             <img src="img/amara.jpg" width="135" height="90" alt="Фото Амары">
           </a>
-        </li>
-        <li>
-          <h3>
+          </li>
+          <li>
+            <h3>
             <a class="hotelitems" href="#">
               <span>Desert quail inn</span>
             </a>
             <span class="hoteldetails">Мотель от 3000 р.</span>
           </h3>
-          <a class="buttondetails" href="#">Подробнее</a>
-          <a class="buttonreserved" href="#">Забронировать</a>
-          <span class="rating">Рейтинг: 8,9</span>
-          <a class="photodesert" href="#">
+            <a class="buttondetails" href="#">Подробнее</a>
+            <a class="buttonreserved" href="#">Забронировать</a>
+            <span class="rating">Рейтинг: 8,9</span>
+            <a class="photodesert" href="#">
             <img src="img/desert.jpg" width="135" height="90" alt="Фото Десерт">
           </a>
-        </li>
-        <li>
-          <h3>
+          </li>
+          <li>
+            <h3>
             <a class="hotelitems" href="#">
               <span>Villas at poco diablo</span>
             </a>
             <span class="hoteldetails">Апартаменты от 2000 р.</span>
           </h3>
-          <a class="buttondetails" href="#">Подробнее</a>
-          <a class="buttonreserved" href="#">Забронировать</a>
-          <span class="rating">Рейтинг: 9,2</span>
-          <a class="photovillas" href="#">
+            <a class="buttondetails" href="#">Подробнее</a>
+            <a class="buttonreserved" href="#">Забронировать</a>
+            <span class="rating">Рейтинг: 9,2</span>
+            <a class="photovillas" href="#">
             <img src="img/villasatpoco.jpg" width="135" height="90" alt="Фото Виллас">
           </a>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <div>
-      <a class="button-hashtag" href="#">Visitsedona</a>
-      <ul class="advantages">
-        <li><a class="button-tw" href="#">Twitter</a></li>
-        <li><a class="button-fb" href="#">Facebook</a></li>
-        <li><a class="button-ut" href="#">Youtube</a></li>
-      </ul>
-    </div>
-    <div>
-      <p>website by</p>
-      <a class="button-developed" href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a>
-    </div>
-  </footer>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer-page">
+        <a class="button-hashtag" href="#">Visitsedona</a>
+        <ul class="buttonfooter">
+          <li><a class="button-tw" href="#">Twitter</a></li>
+          <li><a class="button-fb" href="#">Facebook</a></li>
+          <li><a class="button-ut" href="#">Youtube</a></li>
+        </ul>
+        <div class="htmlacademy">
+          <p>website by</p>
+          <a class="button-developed" href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
