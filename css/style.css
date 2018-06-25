@@ -41,7 +41,6 @@ a {
    margin-right: 244px;
  }
 
-
 .main-navigation {
   line-height: 26px;
   font-weight: 700;
@@ -87,6 +86,18 @@ a {
   margin-bottom: 130px;
 }
 
+.feature h1::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 563px;
+    left: 75px;
+    width: 1200px;
+    height: 57px;
+    background-image: url("../img/shapewhite.png");
+    background-repeat: no-repeat;
+}
+
 .feature h1 {
   margin-top: 60px;
   margin-right: 380px;
@@ -127,11 +138,10 @@ a {
   background-color: #81b3d2;
 }
 
-.attraction-container2 h2{
+.attraction-container2 h2 {
   width: 151px;
   margin: auto;
 }
-
 
 .aboutcity h2,
 .attraction h2 {
@@ -157,7 +167,6 @@ a {
   color: #ffffff;
 }
 
-
 .container3 ul {
   background-color: #eeeeee;
   padding: 0;
@@ -165,31 +174,28 @@ a {
 
 .advantages {
    display: flex;
-   margin-top: 160px;
-   margin-bottom: 87px;
+   flex-wrap: wrap;
+   margin-top: 66px;
+   margin-bottom: 73px;
  }
 
-.advantages li{
+.advantages li {
    width: 400px;
    margin: auto;
 }
 
-.advantages h3{
+.advantages svg {
+  display: flex;
+  margin: auto;
+}
+
+.advantages h3 {
   position: relative;
 
    font-size: 21px;
    font-weight: 700;
    text-align: center;
  }
-
-.advantages h3::before{
-  content: "";
-  position: absolute;
-  background-color: #e12f2f;
-  background-image: url("http://www.w3.org/2000/svg");
-  width: 75px;
-  height: : 75px;
-}
 
 .advantages p {
   text-align: center;
@@ -211,7 +217,6 @@ a {
   width: 400px;
   margin-top: 50px;
   margin-bottom: 65px;
-
 }
 
 .advantages2 p{
@@ -232,11 +237,14 @@ a {
   width: 125px;
 }
 
+/*футер*/
+
 .main-footer {
   display: flex;
+  background-color: transparent;
 }
 
-.social-button{
+.social-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,19 +265,18 @@ a {
   fill: #ffffff;
 }
 
-.social-button:active path{
+.social-button:active path {
   fill:rgba(255,255,255,0.3) ;
 }
 
-.social-button:active path{
+.social-button:active path {
    background-color: #5496bd;
 }
 
-/*футер*/
-
 .buttonfooter {
   display: flex;
-  justify-content: center;
+  margin-left: 240px;
+  margin-right: 215px;
   flex-wrap: wrap;
 }
 
@@ -288,17 +295,27 @@ a {
   line-height: 26px;
 }
 
+.htmlacademy {
+  display: flex;
+}
 
-.button-developed svg {
-  display: inline-block;
-  font-size: 0;
-  padding-right: 50px;
+.htmlacademy p {
+  padding-right: 10px;
+}
 
+.htmlacademy path:focus,
+.htmlacademy path:hover {
+  fill: #81b3d2;
+}
 
+.htmlacademy path:active {
+  fill: #bfbdbe;
 }
 
 /*конец футера*/
 
+
+/*кнопки и форма на главной странице*/
 .searchhotels h3 {
   font-size: 30px;
   line-height: 36px;
@@ -324,16 +341,13 @@ a {
   outline: none;
 }
 
-.staticbutton{
+.staticbutton {
   padding: 30px 150px;
 }
 
 .buttonreserved,
 .buttondetails {
-  display: inline-block;
-  margin-right: 4px;
   padding: 5px 15px;
-  vertical-align: middle;
   font-weight: 700;
 }
 
@@ -388,25 +402,21 @@ a {
   font-weight: 700;
 }
 
-
 .datearrival input,
-.datedeparture input{
+.datedeparture input {
   box-sizing: border-box;
   width: 344px;
   padding: 10px 228px 10px 10px;
 }
-/*как сделать отступы от инпутов?*/
+
 .adults input,
 .children input {
   margin: auto;
   padding: 10px;
 }
 
-/*как сделать короче input у поля дети и поля взрослые?*/
-
 .buttonsearch {
   padding: 16px 195px;
-
   margin: auto;
   margin-bottom: 10px;
 }
@@ -427,7 +437,13 @@ a {
   border: 2px solid #e5e5e5;
 }
 
+/*конец формы на главной странице*/
+
 .formsearching {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 73px;
+
   background-image: url("../img/mountains.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -435,6 +451,7 @@ a {
 
   color:#ffffff;
 }
+
 
 .formsearching fieldset {
   border:none;
@@ -445,14 +462,11 @@ a {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-
 .formsearching legend {
   font-size: 16px;
   font-weight: 700;
   border: none;
 }
-
-
 
 .formsearching input[type="checkbox"] {
   border: 2px solid #ffffff;
@@ -465,15 +479,39 @@ a {
 
 .hotelitems,
 .exit h3,
-.button-hashtag {
+.button-hashtag,
+.exit output {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.container4 h4 {
+.sorting-items {
+  display: flex;
+  margin: 30px 73px;
+}
+
+.exit h3,
+.exit output {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sorting p {
   font-size: 12px;
   line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+
+.sorting li {
+  margin: auto;
+  margin-right: 35px;
 }
 
 .sorting li,
@@ -493,7 +531,11 @@ a {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
   border-bottom: 1px dashed #81b3d2;
+}
 
+.sortingbuttons {
+  align-self: center;
+  padding-left: 400px;
 }
 
 .sorting a:hover,
@@ -511,15 +553,6 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.total .hoteldetails {
-  font: inherit;
-  font-weight: 400;
-}
-
-.rating {
-  color: #666666;
-  background-color: #f2f2f2;
-}
 
 /*сложный фильтр*/
 
@@ -655,34 +688,67 @@ a {
 
 /*конец сложного фильтра*/
 
-/*чекбоксы*/
-.formsearching {
-  display: flex;
-  padding-top: 30px;
-  padding-left: 73px;
-}
-
 
 /*отели*/
 
-.total{
-  flex: 0 0 250px;
-
+.total {
+  display: flex;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 2px solid #e5e5e5;
 }
 
-.hotels{
+.hotel-decoration {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.hotel-decoration .buttonreserved{
+  order: -1;
+  margin-left: 7px;
+  margin-top: 50px;
+}
+
+.hotel-decoration .buttondetails {
+  padding: 5px 15px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.hotel-decoration .rating {
+  order: -2;
+  margin-left: 450px;
+  margin-top: 50px;
+}
+
+.hotels {
   display: flex;
   flex-direction: column;
-
-  margin: 0;
 }
 
-.hotels li{
-  border-top: 1px solid #e5e5e5;
+.hotels h3{
+  display: flex;
+  flex-direction: column;
+  margin-left: 170px;
+}
+
+.hotelitems {
+  margin-bottom: 15px;
+}
+
+.total .hoteldetails {
+  font: inherit;
+  font-weight: 400;
+}
+
+.rating {
+  color: #666666;
+  background-color: #f2f2f2;
+  padding: 5px 15px;
 }
 
 
-/*правильно*/
+/*доп.параметры*/
 img{
   max-width: 100%;
   height: auto;
