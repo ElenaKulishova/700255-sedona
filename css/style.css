@@ -275,9 +275,8 @@ a {
 
 .buttonfooter {
   display: flex;
-  margin-left: 240px;
-  margin-right: 215px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button-hashtag,
@@ -285,8 +284,8 @@ a {
 .htmlacademy {
   width: 400px;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .htmlacademy p,
@@ -297,6 +296,8 @@ a {
 
 .htmlacademy {
   display: flex;
+  margin-left: auto;
+  justify-content: center;
 }
 
 .htmlacademy p {
@@ -442,7 +443,7 @@ a {
 .formsearching {
   display: flex;
   padding-top: 30px;
-  padding-left: 73px;
+  padding-left: 60px;
 
   background-image: url("../img/mountains.jpg");
   background-repeat: no-repeat;
@@ -452,6 +453,9 @@ a {
   color:#ffffff;
 }
 
+.typeofhouse {
+  margin-left: 80px;
+}
 
 .formsearching fieldset {
   border:none;
@@ -506,7 +510,7 @@ a {
 .sorting {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .sorting li {
@@ -558,8 +562,8 @@ a {
 
 .filter-range {
   width: 330px;
-  margin: 0 auto;
-
+  padding-right: 70px;
+  margin-left: auto;
   color: #ffffff;
   text-transform: uppercase;
 }
