@@ -443,7 +443,7 @@ a {
 .formsearching {
   display: flex;
   padding-top: 30px;
-  padding-left: 60px;
+
 
   background-image: url("../img/mountains.jpg");
   background-repeat: no-repeat;
@@ -453,33 +453,54 @@ a {
   color:#ffffff;
 }
 
-.typeofhouse {
-  margin-left: 80px;
-}
-
 .formsearching fieldset {
   border:none;
 }
 
-.formsearching input[type="checkbox"] {
-  border: 5px solid #ffffff;
-  background-color: rgba(255, 255, 255, 0.3);
+
+/*чекбоксы*/
+input[type="checkbox"]:checked + label span{
+  background:url("../img/checkbox-on.svg") no-repeat;
 }
+
 
 .formsearching legend {
   font-size: 16px;
   font-weight: 700;
   border: none;
+
+  margin-bottom: 30px;
+  margin-left: 65px;;
+
 }
 
-.formsearching input[type="checkbox"] {
-  border: 2px solid #ffffff;
-  background-color: transparent;
-}
-
-.formsearching li {
+.formsearching ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
+
+
+.form-items{
+  margin-bottom: 19px;
+  padding-left: 70px;
+
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+.filter-input-checkbox + label span{
+    display:inline-block;
+    width:20px;
+	margin-right: 10px;
+    height:20px;
+    vertical-align:middle;
+	border: 2px solid #ffffff;
+    cursor:pointer;
+	border-radius: 3px;
+}
+
+/*конец чекбоксов*/
 
 .hotelitems,
 .exit h3,
@@ -492,7 +513,7 @@ a {
 
 .sorting-items {
   display: flex;
-  margin: 30px 73px;
+  margin: 10px 73px;
 }
 
 .exit h3,
@@ -539,8 +560,35 @@ a {
 
 .sortingbuttons {
   align-self: center;
-  padding-left: 400px;
+  margin-left: auto;
+
 }
+
+.sortingbuttons a{
+  cursor:pointer;
+}
+
+.sortingbuttonup svg{
+  padding-right: 5px;
+}
+
+.sortingbuttonup path{
+  fill: #cacaca;
+}
+
+.currentbutton path {
+  fill: #81b3d2;
+}
+
+.sortingbuttons path:hover,
+.sortingbuttons path:focus {
+  fill: #333333;
+}
+
+.sortingbuttons path:active {
+  fill: #81b3d2;
+}
+
 
 .sorting a:hover,
 .sorting a:focus {
@@ -618,6 +666,7 @@ a {
 .price-controls input {
   width: 50px;
   margin: 0;
+  outline: none;
 
   color: inherit;
   font: inherit;
@@ -709,8 +758,7 @@ a {
 
 .hotels li{
   display: flex;
-  margin-top: 35px;
-
+  margin-top: 25px;
 }
 
 .hotel-decoration{
@@ -724,7 +772,7 @@ a {
 }
 
 .hoteldetails {
-  margin-top: 15px;
+  padding-top: 5px;
 }
 
 .hotels img{
