@@ -31,16 +31,16 @@
           <fieldset>
             <legend class="infrastructure">Инфраструктура:</legend>
             <ul>
-              <li>
-                <input type="checkbox" name="swimming" id="swimmingpool" checked />
-                <label for="swimmingpool">Бассейн</label>
+              <li class="form-items">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming" id="swimmingpool" checked />
+                <label for="swimmingpool"><span></span>Бассейн</label>
               </li>
-              <li>
-                <input type="checkbox" name="parkingcar" id="parking" />
+              <li class="form-items">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parkingcar" id="parking" />
                 <label for="parking">Парковка</label>
               </li>
-              <li>
-                <input type="checkbox" name="wi-firouter" id="wi-fi" />
+              <li class="form-items">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-firouter" id="wi-fi" />
                 <label for="wi-fi">WI-FI</label>
               </li>
             </ul>
@@ -48,15 +48,15 @@
           <fieldset>
             <legend class="typeofhouse">Тип жилья:</legend>
             <ul>
-              <li>
+              <li class="form-items">
                 <input type="checkbox" name="hotels" id="guesthouse" checked />
                 <label for="guesthouse">Гостиница</label>
               </li>
-              <li>
+              <li class="form-items">
                 <input type="checkbox" name="choosemotels" id="motel" checked/>
                 <label for="motel">Мотель</label>
               </li>
-              <li>
+              <li class="form-items">
                 <input type="checkbox" name="apartments" id="apartments" checked/>
                 <label for="apartments">Апартаменты</label>
               </li>
@@ -106,7 +106,7 @@
             </ul>
           </div>
           <div class="sortingbuttons">
-            <a class="sortingbutton" href="#">
+            <a class="sortingbuttonup" href="#">
               <span class="visually-hidden">по возрастанию</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
             </a>
@@ -146,7 +146,6 @@
                   <span>Desert quail inn</span>
                 </a>
               <span class="hoteldetails">Мотель от 3000 р.</span>
-
               <div class="hotelbuttons">
                 <a class="buttondetails" href="#">Подробнее</a>
                 <a class="buttonreserved" href="#">Забронировать</a>
