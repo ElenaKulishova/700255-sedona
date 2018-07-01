@@ -32,16 +32,16 @@
             <legend class="infrastructure">Инфраструктура:</legend>
             <ul>
               <li class="form-items">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming" id="swimmingpool" checked />
-                <label for="swimmingpool"><span></span>Бассейн</label>
+                <input class="visually-hidden  filter-input-checkbox" type="checkbox" name="swimming" id="swimmingpool" checked />
+                <label for="swimmingpool" tabindex="0">Бассейн</label>
               </li>
               <li class="form-items">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parkingcar" id="parking" />
-                <label for="parking">Парковка</label>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parkingcar" id="parking" />
+                <label for="parking" tabindex="0">Парковка</label>
               </li>
               <li class="form-items">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-firouter" id="wi-fi" />
-                <label for="wi-fi">WI-FI</label>
+                <input class="visually-hidden  filter-input-checkbox" type="checkbox" name="wi-firouter" id="wi-fi" />
+                <label for="wi-fi" tabindex="0">WI-FI</label>
               </li>
             </ul>
           </fieldset>
@@ -49,16 +49,16 @@
             <legend class="typeofhouse">Тип жилья:</legend>
             <ul>
               <li class="form-items">
-                <input type="checkbox" name="hotels" id="guesthouse" checked />
-                <label for="guesthouse">Гостиница</label>
+                <input class="visually-hidden  filter-input-checkbox" type="checkbox" name="hotels" id="guesthouse" checked />
+                <label for="guesthouse" tabindex="0">Гостиница</label>
               </li>
               <li class="form-items">
-                <input type="checkbox" name="choosemotels" id="motel" checked/>
-                <label for="motel">Мотель</label>
+                <input class="visually-hidden  filter-input-checkbox" type="checkbox" name="choosemotels" id="motel" checked/>
+                <label for="motel" tabindex="0">Мотель</label>
               </li>
               <li class="form-items">
-                <input type="checkbox" name="apartments" id="apartments" checked/>
-                <label for="apartments">Апартаменты</label>
+                <input class="visually-hidden  filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked/>
+                <label for="apartments" tabindex="0">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -122,29 +122,31 @@
         <ul class="hotels">
           <li class="amara">
             <a class="photoamara" href="#">
-                <img src="img/amara.jpg" width="135" height="90" alt="Фото Амары">
-              </a>
+              <img src="img/amara.jpg" width="135" height="90" alt="Фото Амары">
+            </a>
             <div class="hotel-decoration">
               <a class="hotelitems" href="#">
-                  <span>Amara resort&Spa</span>
-                </a>
+                <span>Amara resort&Spa</span>
+              </a>
               <span class="hoteldetails">Гостиница от 4000 р.</span>
-
               <div class="hotelbuttons">
                 <a class="buttondetails" href="#">Подробнее</a>
                 <a class="buttonreserved" href="#">Забронировать</a>
               </div>
             </div>
             <span class="rating">Рейтинг: 8,5</span>
+            <div class="star-amara">
+              <span class="visually-hidden">4 звезды</span>
+            </div>
           </li>
           <li class="desert">
             <a class="photodesert" href="#">
-                <img src="img/desert.jpg" width="135" height="90" alt="Фото Десерт">
-              </a>
+              <img src="img/desert.jpg" width="135" height="90" alt="Фото Десерт">
+            </a>
             <div class="hotel-decoration">
               <a class="hotelitems" href="#">
                   <span>Desert quail inn</span>
-                </a>
+              </a>
               <span class="hoteldetails">Мотель от 3000 р.</span>
               <div class="hotelbuttons">
                 <a class="buttondetails" href="#">Подробнее</a>
@@ -152,23 +154,28 @@
               </div>
             </div>
             <span class="rating">Рейтинг: 8,9</span>
+            <div class="star-desert">
+              <span class="visually-hidden">3 звезды</span>
+            </div>
           </li>
           <li class="villas">
             <a class="photovillas" href="#">
-                <img src="img/villasatpoco.jpg" width="135" height="90" alt="Фото Виллас">
-              </a>
+              <img src="img/villasatpoco.jpg" width="135" height="90" alt="Фото Виллас">
+            </a>
             <div class="hotel-decoration">
               <a class="hotelitems" href="#">
-                  <span>Villas at poco diablo</span>
-                </a>
+                <span>Villas at poco diablo</span>
+              </a>
               <span class="hoteldetails">Апартаменты от 2000 р.</span>
-
               <div class="hotelbuttons">
                 <a class="buttondetails" href="#">Подробнее</a>
                 <a class="buttonreserved" href="#">Забронировать</a>
               </div>
             </div>
             <span class="rating">Рейтинг: 9,2</span>
+            <div class="star-villas">
+              <span class="visually-hidden">2 звезды</span>
+            </div>
           </li>
         </ul>
       </section>
