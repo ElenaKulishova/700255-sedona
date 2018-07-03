@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -81,8 +81,8 @@ a {
 .container-photos {
   background-image: url("../img/backgroundmain.jpg");
   background-repeat: no-repeat;
-  background-position:  center -58px;
-  background-color:#81b3d2;
+  background-position: center -58px;
+  background-color: #81b3d2;
 }
 
 .container-photos img {
@@ -150,6 +150,7 @@ a {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+
   background-color: #81b3d2;
 }
 
@@ -216,12 +217,12 @@ a {
  }
 
 .advantages p {
-  text-align: center;
-  background-color: #ffffff;
-  color: #767676;
-
   width: 287px;
   padding-top: 3px;
+
+  text-align: center;
+  color: #767676;
+  background-color: #ffffff;
 }
 
 .advantages2 {
@@ -292,7 +293,7 @@ a {
 }
 
 .social-button:active path {
-  fill:rgba(255,255,255,0.3) ;
+  fill:rgba(255,255,255,0.3);
 }
 
 .social-button:active path {
@@ -332,7 +333,7 @@ a {
 }
 
 .htmlacademy:focus path,
-.htmlacademy:hover path{
+.htmlacademy:hover path {
   fill: #81b3d2;
 }
 
@@ -379,7 +380,7 @@ a {
 }
 
 .staticbutton {
-  padding: 30px 142px;
+  padding: 30px 143px;
   position: relative;
   margin-top: 30px;
 }
@@ -409,7 +410,7 @@ a {
 .buttonreserved:hover,
 .buttonreserved:focus {
   background-color: #604e43;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .buttonsearch:hover,
@@ -417,21 +418,21 @@ a {
 .buttondetails:hover,
 .buttondetails:focus {
   background-color: #669ec0;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .buttonsearch:active,
 .buttondetails:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .staticbutton:active,
 .buttonreserved:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .hotelselection {
@@ -464,8 +465,9 @@ a {
 .datearrival,
 .datedeparture {
   display: flex;
+  align-items: center;
   width: 100%;
-  position:relative;
+  position: relative;
   justify-content: space-between;
 }
 
@@ -479,12 +481,12 @@ a {
 
 .datearrival button,
 .datedeparture button {
-  padding: 0;
-  background-color: transparent;
-  border: none;
   position: absolute;
+  padding: 0;
   right: 9px;
   top: 8px;
+  background-color: transparent;
+  border: none;
 
   fill: #a9a9a9;
   cursor: pointer;
@@ -499,7 +501,7 @@ a {
 
 .calendar:active path {
   fill: #81b3d2;
-  cursor: pointers;
+  cursor: pointer;
 }
 
 .datearrival input,
@@ -517,7 +519,7 @@ a {
 }
 
 .adults {
-  width: 226px;
+  width: 229px;
 }
 
 .children {
@@ -540,7 +542,6 @@ a {
 .children button,
 .adults button {
   padding: 0;
-  background-color: transparent;
   border: none;
   width: 38px;
   height: 38px;
@@ -559,14 +560,14 @@ a {
   background-image: url("../img/minushover.png");
   background-repeat: no-repeat;
   background-position: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .minus:active {
   background-image: url("../img/minusactive.png");
   background-repeat: no-repeat;
   background-position: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .plus {
@@ -580,14 +581,14 @@ a {
   background-image: url("../img/plushover.png");
   background-repeat: no-repeat;
   background-position: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .plus:active {
   background-image: url("../img/plusactive.png");
   background-repeat: no-repeat;
   background-position: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .adults input,
@@ -605,14 +606,13 @@ a {
   margin-bottom: 55px;
 }
 
-.hotelselection input[type="text"]::placeholder{
+.hotelselection input[type="text"]::placeholder {
   color: #000000;
 }
 
 .hotelselection input[type="text"] {
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
-  border: none;
   outline: none;
 
   font-size: 14px;
@@ -642,11 +642,11 @@ a {
   background-position: top center;
   background-color: #51819f;
 
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .formsearching fieldset {
-  border:none;
+  border: none;
 }
 
 
@@ -674,42 +674,42 @@ a {
 }
 
 .filter-input-checkbox + label {
-    display:inline-block;
-    vertical-align:middle;
-    width: 100px;
-    height: 28px;
-	  margin-right: 27px;
-    padding-left: 42px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 28px;
+  margin-right: 27px;
+  padding-left: 42px;
 
-    background:url("../img/checkbox-off.svg");
-    background-repeat: no-repeat;
-    cursor:pointer;
+  background: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .filter-input-checkbox:checked + label {
-  background:url("../img/checkbox-on.svg");
+  background: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:checked:disabled + label {
-  background:url("../img/chekeddis.png");
+  background: url("../img/chekeddis.png");
   background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:disabled + label {
-  background:url("../img/chekbox-offdis.png");
+  background: url("../img/chekbox-offdis.png");
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox:checked:hover+ label,
-.filter-input-checkbox:checked:focus+ label {
-  background:url("../img/checkbox-on.svg");
+.filter-input-checkbox:checked:hover + label,
+.filter-input-checkbox:checked:focus + label {
+  background: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox:hover+ label,
-.filter-input-checkbox:focus+ label {
-  background:url("../img/checkbox-off.svg");
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  background: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 /*конец чекбоксов*/
@@ -776,7 +776,7 @@ a {
 }
 
 .sortingbuttons a {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .sortingbuttonup svg {
@@ -837,7 +837,6 @@ a {
 .price-controls {
   height: 35px;
   margin-bottom: 20px;
-
   position: relative;
   font-size: 0;
 
@@ -853,7 +852,7 @@ a {
   width: 2px;
   height: 22px;
 
-  background: #ffffff;
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
 }
 
@@ -886,21 +885,19 @@ a {
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
 
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .range-toggle {
@@ -909,7 +906,7 @@ a {
   width: 4px;
   height: 4px;
 
-  background: #ababab;
+  background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
@@ -917,7 +914,7 @@ a {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  background-color: #1c4f80;
 }
 
 .range-toggle-min {
@@ -961,6 +958,12 @@ a {
 .total .hoteldetails {
   font: inherit;
   font-weight: 400;
+  width: 118px;
+}
+
+.hotel-decoration p{
+  display: flex;
+  margin: 0;
 }
 
 .hotels {
@@ -1005,10 +1008,10 @@ a {
   right: 75px;
   margin-right: auto;
   margin-left: auto;
-  width: 71px;
-  height: 57px;
+  width: 87px;
+  height: 17px;
   background-image: url("../img/star.svg");
-  background-repeat: repeat-x;
+  background-repeat: space;
 }
 
 .star-desert::before {
@@ -1018,10 +1021,10 @@ a {
   right: 75px;
   margin-right: auto;
   margin-left: auto;
-  width: 55px;
-  height: 57px;
+  width: 65px;
+  height: 17px;
   background-image: url("../img/star.svg");
-  background-repeat: repeat-x;
+  background-repeat: space;
 }
 
 .star-villas::before {
@@ -1031,10 +1034,10 @@ a {
   right: 75px;
   margin-right: auto;
   margin-left: auto;
-  width: 35px;
-  height: 57px;
+  width: 43px;
+  height: 17px;
   background-image: url("../img/star.svg");
-  background-repeat: repeat-x;
+  background-repeat: space;
 }
 
 .rating {
@@ -1048,7 +1051,6 @@ a {
 }
 
 
-/*доп.параметры*/
 img{
   max-width: 100%;
   height: auto;
