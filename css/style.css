@@ -18,7 +18,7 @@ body {
   width: 1200px;
   background-color: #ffffff;
   margin: auto;
-  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -449,7 +449,7 @@ a {
   line-height: 26px;
   font-weight: 700;
   background-color: #ffffff;
-  box-shadow: 7px 7px 15px 0px rgba(0,1,1,0.15);
+  box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
 
   position: absolute;
   left: 0;
@@ -639,7 +639,7 @@ a {
 
   background-image: url("../img/mountains.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center -60px;
   background-color: #51819f;
 
   color: #ffffff;
