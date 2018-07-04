@@ -526,6 +526,8 @@ a {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+
+  animation: split 0.6s;
 }
 
 .hotelselection label {
@@ -1222,4 +1224,22 @@ img {
 
 .form-close {
   display: none;
+}
+
+@keyframes split {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
