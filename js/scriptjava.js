@@ -35,3 +35,8 @@ form.addEventListener("submit", function (evt) {
      form.classList.add("all-error");
   }
 });
+
+close.addEventListener("click", function (evt) {
+   evt.preventDefault();
+  form.classList.remove("all-error");
+ });
