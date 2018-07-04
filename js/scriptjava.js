@@ -5,7 +5,7 @@ var datearrival = form.querySelector("[id=arrival]");
 var datedeparture = form.querySelector("[id=departure]");
 
 var adults = form.querySelector("[name=adults]");
-var children = form.querySelector("[name=children]")
+var children = form.querySelector("[name=children]");
 
 form.classList.add("form-close");
 
