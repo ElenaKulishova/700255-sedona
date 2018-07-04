@@ -7,10 +7,10 @@ var datedeparture = form.querySelector("[id=departure]");
 var adults = form.querySelector("[name=adults]");
 var children = form.querySelector("[name=children]")
 
-
+form.classList.add("form-close");
 
 close.addEventListener("click", function (evt) {
-  evt.preventDefault();
+ evt.preventDefault();
   form.classList.toggle("form-close");
 });
 
