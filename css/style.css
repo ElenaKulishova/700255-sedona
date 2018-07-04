@@ -522,6 +522,7 @@ a {
           box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
 
   position: absolute;
+  z-index: 1;
   left: 0;
   right: 0;
   margin-left: auto;
