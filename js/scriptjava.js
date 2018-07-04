@@ -12,10 +12,7 @@ form.classList.add("form-close");
 close.addEventListener("click", function (evt) {
  evt.preventDefault();
   form.classList.toggle("form-close");
-});
-
-close.addEventListener("click", function (evt) {
-  datearrival.focus();
+    datearrival.focus();
 });
 
 form.addEventListener("submit", function (evt) {
