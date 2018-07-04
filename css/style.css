@@ -1273,4 +1273,5 @@ img {
 
 .map iframe{
   position: absolute;
+  border: 0;
 }
