@@ -13,20 +13,7 @@ close.addEventListener("click", function (evt) {
  evt.preventDefault();
   form.classList.toggle("form-close");
     datearrival.focus();
-});
-
-form.addEventListener("submit", function (evt) {
-  if (!datearrival.value||!departure.value) {
-    evt.preventDefault();
-    console.log("введите желаемую дату");
-  }
-});
-
-form.addEventListener("submit", function (evt) {
-  if (!adults.value||!children.value) {
-    evt.preventDefault();
-    console.log("введите количество");
-  }
+     form.classList.remove("all-error");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -35,8 +22,3 @@ form.addEventListener("submit", function (evt) {
      form.classList.add("all-error");
   }
 });
-
-close.addEventListener("click", function (evt) {
-   evt.preventDefault();
-  form.classList.remove("all-error");
- });
