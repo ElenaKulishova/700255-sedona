@@ -10,15 +10,15 @@ var children = form.querySelector("[name=children]")
 form.classList.add("form-close");
 
 close.addEventListener("click", function (evt) {
- evt.preventDefault();
+  evt.preventDefault();
   form.classList.toggle("form-close");
-    datearrival.focus();
-     form.classList.remove("all-error");
+  datearrival.focus();
+  form.classList.remove("all-error");
 });
 
 form.addEventListener("submit", function (evt) {
   if (!datearrival.value||!departure.value||!adults.value||!children.value) {
     evt.preventDefault();
-     form.classList.add("all-error");
+    form.classList.add("all-error");
   }
 });
