@@ -31,3 +31,10 @@ form.addEventListener("submit", function (evt) {
     console.log("введите количество");
   }
 });
+
+form.addEventListener("submit", function (evt) {
+  if (!datearrival.value||!departure.value||!adults.value||!children.value) {
+    evt.preventDefault();
+     form.classList.add("all-error");
+  }
+});
