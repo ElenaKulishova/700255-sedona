@@ -1232,7 +1232,8 @@ a {
 
 .rating {
   margin-top: 68px;
-  margin-left: 522px;
+  margin-left: auto;
+  margin-right: 71px;
 
   color: #666666;
   background-color: #f2f2f2;
