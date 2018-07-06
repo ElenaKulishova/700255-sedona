@@ -468,7 +468,8 @@ a {
 }
 
 .staticbutton {
-  padding: 30px 143px;
+  width: 570px;
+  padding: 30px 0;
   position: relative;
   margin-top: 33px;
 }
@@ -537,8 +538,8 @@ a {
   width: 570px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 56px;
-  padding-right: 56px;
+  padding-left: 55px;
+  padding-right: 55px;
   padding-top: 40.5px;
 
   font-size: 14px;
@@ -557,6 +558,10 @@ a {
 
   -webkit-animation: split 0.6s;
           animation: split 0.6s;
+}
+
+.hotelselection label {
+  color: #000000;
 }
 
 .datearrival,
@@ -580,7 +585,8 @@ a {
           box-sizing: border-box;
   height: 38px;
   width: 348px;
-  padding-left: 10px;
+  padding-left: 12px;
+  padding-top: 3px;
 }
 
 .datearrival button,
@@ -619,11 +625,11 @@ a {
 }
 
 .adults {
-  width: 225px;
+  width: 226px;
 }
 
 .children {
-  width: 179px;
+  width: 177px;
 }
 
 .adults,
@@ -787,7 +793,7 @@ a {
   border: none;
 
   margin-bottom: 20px;
-  margin-left: 60px;
+  margin-left: 59px;
 }
 
 .formsearching ul {
@@ -1075,7 +1081,7 @@ a {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
 }
 
 .button-scan input[type="submit"] {
@@ -1148,7 +1154,7 @@ a {
   margin: 0;
   width: 1200px;
   padding-top: 26px;
-  padding-bottom: 4px;
+  padding-bottom: 23px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1226,12 +1232,13 @@ a {
 
 .rating {
   margin-top: 68px;
-  margin-bottom: 25px;
   margin-left: 522px;
 
   color: #666666;
   background-color: #f2f2f2;
-  padding: 3px 13px;
+  width: 111px;
+  padding: 3px 0;
+  text-align: center;
 }
 
 img {
